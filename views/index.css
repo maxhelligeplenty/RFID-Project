@@ -1,19 +1,40 @@
 body{
   width: auto;
+  margin: 0;
+}
+.background-top
+{
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../assets/images/rotate-input-pointer.png);
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-attachment: fixed;
+  background-position: left top;
+}
+.background-bottom
+{
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
   background-image: url(../assets/images/input-pointer.png);
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 35%;
   background-attachment: fixed;
-  background-position: right bottom; 
-  margin: 0;
+  background-position: right bottom;
 }
 .numblock-wrapper
 {
+  justify-content: center;
   display: flex;
   height: 100vh;
 }
 .numblock-container
 {
+  z-index: 10;
   align-self: center;
 }
 .numblock-wrapper .numblock-container input
@@ -23,7 +44,6 @@ body{
   border: 2px solid grey;
   font-size: 40px;
   padding: 10px;
-  margin: 150px;
 }
 input:focus {
   outline: none;
