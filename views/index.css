@@ -1,0 +1,54 @@
+body{
+  width: auto;
+  background-image: url(../assets/images/input-pointer.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-attachment: fixed;
+  background-position: right bottom; 
+  margin: 0;
+}
+.numblock-wrapper
+{
+  display: flex;
+  height: 100vh;
+}
+.numblock-container
+{
+  align-self: center;
+}
+.numblock-wrapper .numblock-container input
+{
+  width: 400px;
+  height: 40px;
+  border: 2px solid grey;
+  font-size: 40px;
+  padding: 10px;
+  margin: 150px;
+}
+input:focus {
+  outline: none;
+}
+#numblock.invalid
+{
+  border: 2px solid red;
+}
+
+.alert
+{
+  width: 200px;
+  padding: 10px;
+  border: 1px solid black;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.alert.invalid, .alert.failed
+{
+  background-color: #FF1919;
+}
+.alert.success
+{
+  background-color: #00e500;
+}
